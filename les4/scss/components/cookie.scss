@@ -1,0 +1,46 @@
+@use '../colors/colors.scss';
+
+
+.cookie{
+    height: 20rem;
+    width: 20rem;
+    background: #ebbd5b;
+    border-radius: 50%;
+    border: colors.$border-cookie;
+    position: absolute;
+    bottom: 50%;
+    right: 20%;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+}
+.cookie:hover{
+    cursor: pointer;
+}
+
+.cookie__spot{
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    background: black;
+}
+
+.cookie__spot--first{
+    top: 25%;
+    left: 20%;
+}
+
+.cookie__spot--second{
+    top: 30%;
+    right: 20%;
+}
+
+.cookie__spot--third{
+    bottom: 15%;
+    right: 50%;
+}
+
+.cookie__spot--fourth{
+    bottom: 10%;
+    right: 5%;
+}

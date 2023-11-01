@@ -1,0 +1,84 @@
+@use '../colors/colors.scss';
+
+.cookiemonster__mouth{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    background:colors.$mouth;
+    width: 60rem;
+    height: 60rem;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    -webkit-clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
+}
+
+.cookiemonster__mouthcircle{
+    position: absolute;
+    height: 30rem;
+    width: 20rem;
+    background: #0f98dc;
+    top: 30%;
+    left: 16%;
+    border-radius: 50%;
+    transform: rotate(10deg)
+}
+
+.cookiemonster__mouthCircle--second{
+    left: calc(16% + 10rem);
+}
+.cookiemonster__mouthcircle--third{
+    left: calc(16% + 20rem);
+}
+.cookiemonster__mouthcircle--fourth{
+    left: calc(16% + 30rem);
+}
+
+.cookiemonster__mouthcircle--fifth{
+    left: calc(16% + 40rem);
+}
+.cookiemonster__mouthcircle--sixth{
+    left: calc(16% + 50rem);
+}
+
+.cookiemonster__mouthend{
+    position: absolute;
+    height: 25rem;
+    width: 25rem;
+    top: 36%;
+    z-index: 1;
+    border-radius: 50%;
+    border: 1rem solid transparent;
+    border-bottom: 1rem solid black;
+}
+
+.cookiemonster__mouthend--left{
+    left: 10%;
+    transform: rotate(35deg);
+}
+
+.cookiemonster__mouthend--right{
+    right: 10%;
+    transform: rotate(-35deg);
+}
+
+
+.cookiemonster__mouthend::after{
+    content: "";
+    width: 70%;
+    height: 60%;
+    position: absolute;
+    border-radius: 50%;
+    border: 1rem solid transparent;
+    border-bottom: 1rem solid black;
+}
+.cookiemonster__mouthend--left::after{
+    transform: rotate(125deg);
+    top: 70%;
+}
+
+.cookiemonster__mouthend--right::after{
+    transform: rotate(-125deg);
+    left: 30%;
+    bottom: -29%;
+}

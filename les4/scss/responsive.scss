@@ -1,0 +1,12 @@
+
+@media screen and (max-width:75rem) {
+    .cookie{
+        display: none;
+    }
+    .cookiemonster{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.35);
+    }
+}

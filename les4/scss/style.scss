@@ -1,0 +1,39 @@
+@use 'components/cookie.scss';
+@use 'components/mouth.scss';
+@use 'components/eyes.scss';
+@use 'responsive';
+@use 'colors/colors.scss';
+
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html{
+    font-size: 62.5%; /* 1rem=10px */
+}
+
+
+body{
+    min-height: 100vh;
+    background: colors.$background;
+
+}
+
+.cookiemonster{
+    width: 100rem;
+    height: 100rem;
+    position: relative;
+    transform: scale(0.6);
+    
+}
+
+.u-display-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
